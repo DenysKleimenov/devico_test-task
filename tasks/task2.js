@@ -1,3 +1,5 @@
+"use strict";
+
 const d = {
   left: {
     left: {
@@ -16,7 +18,7 @@ const d = {
 };
 
 function foo(obj) {
-  for (prop in obj) {
+  for (const prop in obj) {
     switch (obj[prop]) {
       case 1:
         obj[prop] = 0;

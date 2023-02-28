@@ -1,3 +1,5 @@
+"use strict";
+
 const getRandomColor = () => "#" + Math.floor(Math.random() * 16777215).toString(16);
 
 function createElement(width, height, parentElement = document.body) {
