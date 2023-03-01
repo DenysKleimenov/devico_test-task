@@ -16,8 +16,12 @@ function calc(number, operation) {
   console.log(totalValue);
 }
 
-calc(5, "+"); // 5
+console.log('First task');
+
+calc(5, "+") // 5
 calc(2, "*"); // 10
 calc(3, "-"); // 7
 calc(2, "*"); // 14
 calc(7, "/"); // 2
+
+console.log('----------');

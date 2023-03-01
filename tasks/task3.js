@@ -23,5 +23,9 @@ function bar(n) {
   return matrix;
 }
 
+console.log('Third task');
+
 console.log(bar(5));
 console.log(bar(4));
+
+console.log('----------');

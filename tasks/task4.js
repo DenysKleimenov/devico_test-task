@@ -29,7 +29,7 @@ function incrementCounter() {
   const { id } = this;
 
   counters[id]++;
-  elements[id].innerText = counters[this.id];
+  elements[id].innerText = counters[id];
   elements[id].style.backgroundColor = getRandomColor();
 }
 
@@ -45,17 +45,14 @@ container.style.flexDirection = "column";
 
 const secondContainer = createElement("fit-content", "fit-content", container);
 
-for (let i = 1; i < 3; i++) {
-  elements.push(createElement("150px", "15px", secondContainer));
-}
-
+elements.push(createElement("150px", "15px", secondContainer));
+elements.push(createElement("150px", "15px", secondContainer));
 elements.push(createElement("100%", "150px", container));
 
 const thirdContainer = createElement("fit-content", "fit-content", container);
 
-for (let i = 4; i < 6; i++) {
-  elements.push(createElement("150px", "15px", thirdContainer));
-}
+elements.push(createElement("150px", "15px", thirdContainer));
+elements.push(createElement("150px", "15px", thirdContainer));
 
 elements.forEach((element, i) => {
   element.id = i;

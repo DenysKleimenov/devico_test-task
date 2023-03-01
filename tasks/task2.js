@@ -35,5 +35,9 @@ function foo(obj) {
   return obj;
 }
 
+console.log('Second task');
+
 foo(d);
 console.log(d);
+
+console.log('-----------');
